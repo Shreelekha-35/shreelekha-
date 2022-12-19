@@ -1,0 +1,216 @@
+// Whether it is positive or negative
+
+package com.shreelekha;
+
+public class positiveornegative {
+
+	public static void main(String[] args) {
+		int num = 78;
+		System.out.println("Input number is:"+num);
+		if (num > 0) {
+			System.out.println("the number is positive");
+		} else if (num < 0) {
+			System.out.println("the number is negative");
+		}
+	}
+
+}
+
+Output:
+Input number is:78
+the number is positive
+
+**********************************************************
+
+// print the greatest number
+
+package com.shreelekha;
+
+public class Greatestnumber {
+
+	public static void main(String[] args) {
+		int a=56,b=104,c=132;
+		System.out.println("Input the number:"+a);
+		System.out.println("Input the number:"+b);
+		System.out.println("Input the number:"+c);
+		if(a>=b&&a>=c)
+			System.out.println("a is the greatest number:"+a);
+		else if(b>=a&&b>=c)
+		System.out.println("b is the greatest number:"+b);
+		else
+			System.out.println("c is the greatest number:"+c);
+
+	}
+
+}
+Output:
+Input the number:56
+Input the number:104
+Input the number:132
+c is the greatest number:132
+
+
+**************************************************************
+
+//Displays the name of the weekday
+
+
+package com.shreelekha;
+
+public class Weekday {
+
+	public static void main(String[] args) {
+		int Week=5;
+		System.out.println("Input number is:"+5);
+		switch (Week) {
+		case 1:
+			System.out.println("Monday");
+			break;
+		case 2:
+			System.out.println("Tuesday");
+			break;
+		case 3:
+			System.out.println("Wednesday");
+			break;
+		case 4:
+			System.out.println("Thursday");
+			break;
+		case 5:
+			System.out.println("Friday");
+			break;
+		default:
+			System.out.println("Invalid Week");
+			break;
+		}
+
+	}
+
+}
+
+Output:
+Input number is:5
+Friday
+
+
+*********************************************************************************
+
+// Sum and Average
+
+package com.shreelekha;
+import java.util.*;
+
+public class sumandaverage {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+				System.out.println("input the 5 number:");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		int d = sc.nextInt();
+		int e = sc.nextInt();
+		int sum = a + b + c + d + e;
+		System.out.println("The sum of 5 number is:"+sum);
+		int avg = sum / 5;
+		System.out.println("The Average is:"+avg);
+
+		
+	}
+
+}
+
+Output:
+input the 5 number:
+5
+6
+7
+8
+9
+The sum of 5 number is:35
+The Average is:7
+*********************************************************************************
+
+// First 10 natural numbers
+
+package com.shreelekha;
+
+public class naturalnumber {
+
+	public static void main(String[] args) {
+			System.out.println("the first 10 natural numbers are");
+		for(int i=1;i<=10;i++)
+			
+		{
+			System.out.println(i);
+		}
+	}
+
+}
+
+Output:
+the first 10 natural numbers are
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+****************************************************************************
+
+// product details
+
+package com.shreelekha;
+
+import java.util.*;
+	
+public class productdetails {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("product_id:");
+		int product_id = sc.nextInt();
+		System.out.println("product_name:");
+		String product_name = sc.next();
+		System.out.println("product_price:");
+		int product_price = sc.nextInt();
+		System.out.println("quantity:");
+		int product_quantity = sc.nextInt();
+		System.out.println("category:");
+		String product_category = sc.next();
+		System.out.println("brand:");
+		String product_brand = sc.next();
+		System.out.println("product_id:" + product_id);
+		System.out.println("product_name:" + product_name);
+		System.out.println("product_price:" + product_price);
+		System.out.println("product_quantity:" + product_quantity);
+		System.out.println("product_category:" + product_category);
+		System.out.println("product_brand:" + product_brand);
+
+	}
+
+}
+Output:
+
+product_id:
+10123
+product_name:
+toothpaste
+product_price:
+35
+quantity:
+160
+category:
+childres
+brand:
+colgate
+product_id:10123
+product_name:toothpaste
+product_price:35
+product_quantity:160
+product_category:childres
+product_brand:colgate
+
